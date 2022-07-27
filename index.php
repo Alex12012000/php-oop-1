@@ -24,7 +24,7 @@ class Movie {
 
 };
 
-$titanic = new Movie('Titanic', 2001, 'Drama');
+$titanic = new Movie('Titanic', 1997, 'Drama');
 
 ?>
 
