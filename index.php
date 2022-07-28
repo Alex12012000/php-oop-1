@@ -17,14 +17,15 @@ class Movie {
    public function isOld() {
         if($this->movieYear < 2000) {
             return $this->age = 'No, diversamente giovane..';
-        } else {
         }
+
         return $this->age = 'No!! È GGGiovane';
    }
 
 };
 
 $titanic = new Movie('Titanic', 1997, 'Drama');
+$irishman = new Movie('The Irishman', 2019, 'Gangster');
 
 ?>
 
@@ -40,6 +41,10 @@ $titanic = new Movie('Titanic', 1997, 'Drama');
     <h2><?php echo $titanic->movieName ?></h2>
     <h3><?php echo $titanic->movieYear ?></h3>
     <span>E' vecchio? <?php echo $titanic->isOld() ?>..</span>
-    <h3><?php echo $titanic->movieGenre ?></h3>
+    <h3><?php echo $irishman->movieGenre ?></h3>
+    <h2><?php echo $irishman->movieName ?></h2>
+    <h3><?php echo $irishman->movieYear ?></h3>
+    <span>E' vecchio? <?php echo $irishman->isOld() ?>..</span>
+    <h3><?php echo $irishman->movieGenre ?></h3>
 </body>
 </html>
